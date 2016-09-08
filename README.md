@@ -1,1 +1,1 @@
-https://devblog.dymel.pl/2016/09/13/aspnet-core-with-angular2-tutorial/
+https://devblog.dymel.pl/2016/09/08/aspnet-core-with-angular2-tutorial/
