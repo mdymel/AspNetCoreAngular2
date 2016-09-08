@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>Demo Website</title>
+    <link href="/app/styles/main.css" rel="stylesheet">
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+    <script src="/node_modules/zone.js/dist/zone.js"></script>
+    <script src="/node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="/app/systemjs.config.js"></script>
+
+    <base href="/">
+</head>
+<body>
+    <script>
+        System.import('/app/main')
+            .then(null, console.error.bind(console));
+    </script>
+
+    <app>Loading...</app>
+</body>
+</html>
