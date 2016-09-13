@@ -18,14 +18,9 @@ module.exports = function (config) {
             'node_modules/zone.js/dist/async-test.js',
             'node_modules/zone.js/dist/fake-async-test.js',
 
-            'node_modules/primeui/primeui-ng-all.js',
-
             // RxJs.
             { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
             { pattern: 'node_modules/rxjs/**/*.js.map', included: false, watched: false },
-
-            { pattern: 'node_modules/primeng/**/*.js', included: false, watched: false },
-            { pattern: 'node_modules/primeng/**/*.js.map', included: false, watched: false },
 
             'Frontend/test-main.js',
 
@@ -39,16 +34,16 @@ module.exports = function (config) {
 
             // paths loaded via Angular's component compiler
             // (these paths need to be rewritten, see proxies section)
-            {pattern: 'wwwroot/app/**/*.html', included: false, watched: true},
-            {pattern: 'wwwroot/app/**/*.css', included: false, watched: true},
+            //{pattern: 'wwwroot/app/**/*.html', included: false, watched: true},
+            //{pattern: 'wwwroot/app/**/*.css', included: false, watched: true},
 
             // paths to support debugging with source maps in dev tools
             {pattern: 'Frontend/app/**/*.ts', included: false, watched: false},
 
-            //images
-            {pattern: 'wwwroot/app/**/*.png', included: false, watched: false},
-            {pattern: 'wwwroot/app/**/*.jpg', included: false, watched: false},
-            {pattern: 'wwwroot/app/**/*.svg', included: false, watched: false}
+            ////images
+            //{pattern: 'wwwroot/app/**/*.png', included: false, watched: false},
+            //{pattern: 'wwwroot/app/**/*.jpg', included: false, watched: false},
+            //{pattern: 'wwwroot/app/**/*.svg', included: false, watched: false}
         ],
 
         proxies: {
@@ -63,7 +58,7 @@ module.exports = function (config) {
 
         port: 9876,
         colors: true,
-        logLevel: config.LOG_WARN,
+        logLevel: config.LOG_INFO,
         autoWatch: true,
         browsers: ['Chrome'],
         singleRun: false

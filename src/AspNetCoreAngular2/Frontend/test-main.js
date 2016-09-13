@@ -22,45 +22,7 @@ function isBuiltFile(path) {
 
 var allSpecFiles = Object.keys(window.__karma__.files)
     .filter(isSpecFile)
-    .filter(isBuiltFile)
-    .filter(function(path) {
-        var match =
-            path === "/base/wwwroot/app/tests/sanityTests.spec.js" ||
-            path === "/base/wwwroot/app/home/home.component.spec.js" ||
-            path === "/base/wwwroot/app/home/login-form.component.spec.js" ||
-
-            path === "/base/wwwroot/app/fassaden/home/validators/blinds-dimensions-validator.spec.js" ||
-            path === "/base/wwwroot/app/fassaden/variants/validators/box-sizing-validator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/home/lm-blinds-dimensions.component.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/home/lm-slats-selector.component.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/home/validators/blinds-dimensions-validator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/home/validators/product-type-validator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/home/validators/slats-selector-validator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/lm-configurator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/technical/validators/box-mounting-validator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/variants/validators/box-type-validator.spec.js" ||
-            path === "/base/wwwroot/app/lamellen/variants/validators/colors-validator.spec.js" ||
-            path === "/base/wwwroot/app/orders/orders.component.spec.js" ||
-            path === "/base/wwwroot/app/passwordReset/passwordreset-step1.component.spec.js" ||
-            path === "/base/wwwroot/app/shared/base/configurator-base-component.spec.js" ||
-            path === "/base/wwwroot/app/shared/base/configurator-question-base.component.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/configuratorQuestions/validators/commutator-validator.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/configuratorQuestions/validators/gear-type-validator.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/configuratorQuestions/validators/guide-type-validator.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/configuratorQuestions/validators/position-validator.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/configuratorQuestions/validators/radio-validator.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/gr-slider.component.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/left-menu.component.spec.js" ||
-            path === "/base/wwwroot/app/shared/components/phone-number.component.spec.js" ||
-            path === "/base/wwwroot/app/shared/configurator-updater.spec.js" ||
-            path === "/base/wwwroot/app/shared/pipes/price.pipe.spec.js" ||
-            path === "/base/wwwroot/app/shared/pipes/ral-color.pipe.spec.js" ||
-            path === "/base/wwwroot/app/shared/pipes/values.pipe.spec.js" ||
-            path === "/base/wwwroot/app/shared/services/configurator.service.spec.js" ||
-
-            false;
-        // if (!match) console.log(path);
-        return match;});
+    .filter(isBuiltFile);
 
 var map = {
     'rxjs': 'node_modules/rxjs',

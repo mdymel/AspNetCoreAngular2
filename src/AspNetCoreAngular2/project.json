@@ -4,6 +4,7 @@
       "version": "1.0.0",
       "type": "platform"
     },
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
 
