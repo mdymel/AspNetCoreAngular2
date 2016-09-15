@@ -2,9 +2,7 @@
 
     var map = {
         'rxjs': '/node_modules/rxjs',
-        '@angular': '/node_modules/@angular',
-        'moment': '/node_modules/moment/moment.js',
-        'primeng': "/node_modules/primeng"
+        '@angular': '/node_modules/@angular'
     };
 
     var packages = {
