@@ -2,7 +2,8 @@
 
     var map = {
         'rxjs': '/node_modules/rxjs',
-        '@angular': '/node_modules/@angular'
+        '@angular': '/node_modules/@angular',
+        'app': "/app"
     };
 
     var packages = {
