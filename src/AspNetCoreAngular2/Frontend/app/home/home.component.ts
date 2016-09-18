@@ -5,7 +5,7 @@ import {HelloService} from "./hello.service";
     selector: "app-home",
     template: `
         <h1>Greeting test</h1>
-        {{greeting}}
+        <span id="greeting">{{greeting}}</span>
     `
 })
 export class HomeComponent {
