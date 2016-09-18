@@ -8,8 +8,7 @@
 
     var packages = {
         'app':                        { main: 'main.js',  defaultExtension: 'js' },
-        'rxjs':                       { defaultExtension: 'js' },
-        'primeng':                    { defaultExtension: 'js' }
+        'rxjs':                       { defaultExtension: 'js' }
     };
 
     var ngPackageNames = [
@@ -21,7 +20,6 @@
         'platform-browser',
         'platform-browser-dynamic',
         'router',
-        'router-deprecated',
         'testing',
         'upgrade'
     ];
