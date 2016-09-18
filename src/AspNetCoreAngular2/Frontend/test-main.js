@@ -26,9 +26,7 @@ var allSpecFiles = Object.keys(window.__karma__.files)
 
 var map = {
     'rxjs': 'node_modules/rxjs',
-    '@angular': 'node_modules/@angular',
-    'moment': 'node_modules/moment/moment.js',
-    'primeng': "node_modules/primeng"
+    '@angular': 'node_modules/@angular'
 };
 
 var packages = {
@@ -37,15 +35,19 @@ var packages = {
 };
 var packageNames = [
     'common',
+    'common/testing',
     'compiler',
+    'compiler/testing',
     'core',
+    'core/testing',
     'http',
+    'http/testing',
     'platform-browser',
+    'platform-browser/testing',
     'platform-browser-dynamic',
+    'platform-browser-dynamic/testing',
     'router',
-    'router-deprecated',
-    'testing',
-    'upgrade',
+    'router/testing',
     'forms'
 ];
 
@@ -70,7 +72,8 @@ Promise.all([
     var testing = providers[0];
     var testingBrowser = providers[1];
 
-    testing.TestBed.initTestEnvironment(testingBrowser.BrowserDynamicTestingModule,
+    testing.TestBed.initTestEnvironment(
+        testingBrowser.BrowserDynamicTestingModule,
         testingBrowser.platformBrowserDynamicTesting());
 
 }).then(function() {
