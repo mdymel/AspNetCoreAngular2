@@ -13,6 +13,8 @@ export class HelloService {
     greet(name: string): Observable<string> {
         return this.http
             .get(`/api/hello?name=${name}`)
-            .map(res => <string> res.text());
+            .map(res => {
+                return <string> res.text();
+            });
     }
 }
