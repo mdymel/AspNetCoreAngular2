@@ -2,6 +2,7 @@ import {Component} from "@angular/core";
 
 @Component({
     template: `
+        <my-nav></my-nav>
         <h1>About us</h1>
         <p>Here you can learn everything about us.</p>
         <p>Date: {{today | date: short}}</p>`

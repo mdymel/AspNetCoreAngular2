@@ -2,10 +2,10 @@ import { Component } from "@angular/core";
 import {HelloService} from "./hello.service";
 
 @Component({
-    // selector: "app-home",
     template: `
+        <my-nav></my-nav>
         <h1>Greeting test</h1>
-        <span id="greeting">{{greeting}}</span>
+        <p id="greeting">{{greeting}}</p>
     `
 })
 export class HomeComponent {
