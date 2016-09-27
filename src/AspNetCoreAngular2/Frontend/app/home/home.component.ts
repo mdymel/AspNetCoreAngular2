@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import {HelloService} from "./hello.service";
 
 @Component({
-    selector: "app-home",
+    // selector: "app-home",
     template: `
         <h1>Greeting test</h1>
         <span id="greeting">{{greeting}}</span>

@@ -4,17 +4,19 @@ import {AppComponent}   from "./app.component";
 import {routing} from "./app.routes";
 import {HttpModule} from "@angular/http";
 import {HomeModule} from "./home/home.module";
+import {AboutModule} from "./about/about.module";
 
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
     imports:      [
         BrowserModule,
         HttpModule,
         routing,
 
-        HomeModule
+        HomeModule,
+        AboutModule
+    ],
+    declarations: [
+        AppComponent
     ],
     bootstrap:    [AppComponent],
 })
