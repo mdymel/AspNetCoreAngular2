@@ -1,13 +1,9 @@
 import {Routes, RouterModule} from "@angular/router";
-import {HomeComponent} from "./home/home.component";
-import {AboutComponent} from "./about/about.component";
-import {ProductComponent} from "./product/product.component";
+import {ModuleWithProviders} from "@angular/core";
 
 const appRoutes: Routes  = [
     { path: "", redirectTo: "home", pathMatch: "full" },
-    { path: "home", component: HomeComponent },
-    { path: "about", component: AboutComponent },
-    { path: "product", component: ProductComponent }
+    // { path: "product", loadChildren: 'app/product/product.module#ProductModule'  }
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+export const routing: ModuleWithProviders  = RouterModule.forRoot(appRoutes);

@@ -5,7 +5,6 @@ import {routing} from "./app.routes";
 import {HttpModule} from "@angular/http";
 import {HomeModule} from "./home/home.module";
 import {AboutModule} from "./about/about.module";
-import {ProductModule} from "./product/product.module";
 
 @NgModule({
     imports:      [
@@ -15,7 +14,7 @@ import {ProductModule} from "./product/product.module";
 
         HomeModule,
         AboutModule,
-        ProductModule
+        // ProductModule
     ],
     declarations: [
         AppComponent
