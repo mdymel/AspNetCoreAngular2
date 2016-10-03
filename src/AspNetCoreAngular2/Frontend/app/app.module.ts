@@ -13,8 +13,7 @@ import {AboutModule} from "./about/about.module";
         routing,
 
         HomeModule,
-        AboutModule,
-        // ProductModule
+        AboutModule
     ],
     declarations: [
         AppComponent

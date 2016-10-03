@@ -1,18 +1,11 @@
 import {NgModule} from "@angular/core";
 import {NavComponent} from "./nav.component";
 import {CommonModule} from "@angular/common";
-import {routing} from "../app.routes";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
-    declarations: [
-        NavComponent
-    ],
-    imports: [
-        CommonModule, routing
-    ],
-    exports: [
-        CommonModule,
-        NavComponent
-    ]
+    declarations: [NavComponent],
+    imports: [CommonModule, RouterModule],
+    exports: [CommonModule, NavComponent]
 })
 export class SharedModule {}

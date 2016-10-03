@@ -1,13 +1,12 @@
-import {Component, EventEmitter} from "@angular/core";
+import {Component} from "@angular/core";
 import {ProductModel} from "./product.model";
 import {ProductsService} from "./products.service";
-import {Output} from "@angular/core";
 
 @Component({
-    selector: "products-list",
     template: `
+        <h2>Products list</h2>
         <ul>
-            <li *ngFor="let product of products" (click)="change.next(product)" style="cursor: pointer; text-decoration: underline;">{{product.name}}</li>
+            <li *ngFor="let product of products" ><a [routerLink]="product.id">{{product.name}}</a></li>
         </ul>
     `
 })
@@ -17,7 +16,6 @@ export class ProductsListComponent {
 
     }
 
-    @Output() change: EventEmitter = new EventEmitter();
     products: ProductModel[];
 
     ngOnInit() {
